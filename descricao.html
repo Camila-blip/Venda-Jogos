@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Bootstrap--> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .btn:hover{
+                background-color: #fff;  
+        }
+        .btn{
+            background-color: gray;
+            color: #fff
+        }
+        .borda{
+            border-style: solid;
+        }
+        .btnn:hover{
+                background-color: black;  
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <!--inicio cabecalho-->
+    <div class="container-fluid" style="background-color: black;">
+        <div class="container">
+             <div class="row">
+                <div class="col-sm-2">
+                    <a href="index.html"> 
+                      <img src="logo2.jfif" width="100">
+                    </a>
+                </div>
+                <div class="col-sm-3" style="margin-top: 3%;">
+                    <input class="form-control" id="pesquisa" name="pesquisa" placeholder="Digite o que você procura">
+                </div>
+                <div class="col-sm-1" style="margin-top: 3%;">
+                    <button type="button" id="btnbuscar" name="btnbuscar" class="btn form-control" >Buscar</button>
+                </div>
+                <div class="col-sm-4">
+                </div>
+                <div class="col-sm-2" style="margin-top: 3%;">
+                    <button type="button" id="btncarrinho" name="btncarrinho" class="btn form-control">Carrinho <!--icon---><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                </div>
+            </div>
+           
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                <div class="navbar-header">
+                </div>
+                <ul class="nav navbar-nav" >
+                 
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">PLAYSTATION <span class="caret"></span></a>
+                       
+                        <ul class="dropdown-menu">
+                            <li><a href="tiposdejogos.html?PS2">PS2</a></li>
+                            <li><a href="tiposdejogos.html?PS3">PS3</a></li>
+                            <li><a href="tiposdejogos.html?PS4">PS4</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">XBOX <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="tiposdejogos.html?360">Xbox 360</a></li>
+                            <li><a href="tiposdejogos.html?XBoxOne">XBoxOne</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">NINTENDO <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="tiposdejogos.html?Switch">Nintendo Switch</a></li>
+                            <li><a href="tiposdejogos.html?WiiU">Nintendo WiiU</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tiposdejogos.html?PC">PC</a></li>
+                    <li><a href="#">#PROMOÇÃO QRCODE</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">COMO FUNCIONA<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">COMO COMPRAR</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">NOSSAS LOJAS</a></li>
+                    <li><a href="#">FALE CONOSCO</a></li>
+                </ul>
+                </div>
+            </nav>
+         </div>
+      </div>
+      <div class="container" style=" font-size:20px; margin-top: 2%;">
+            <div class="row" id="mostra_Tom" style="display:none">
+                <div class="col-md-6">
+                  <img src="https://store.ubi.com/dw/image/v2/ABBS_PRD/on/demandware.static/-/Sites-masterCatalog/default/dwb3dccb35/images/large/56c4948a88a7e300458b482c.jpg?sw=341&sh=450&sm=fit"  style=" height: auto;">
+                    
+                </div>
+                <div class="col-md-5">
+                    <label>Tom Clancy's Splinter Cell: Double Agent </label>
+                    <br>
+                    <hr>
+                    <label style="color:rgb(199, 101, 36)"><u>Descrição</u></label>
+                    <hr>
+                    <h4>Vivencie a tensão incessante e os dilemas da vida de um agente duplo. Minta. Mate. Prejudique. Traia. Tudo para proteger os inocentes. Até onde você iria para ganhar a confiança do inimigo? Como o agente secreto Sam Fisher, você deve se infiltrar num grupo terrorista cruel e destruí-lo internamente. Você precisará ponderar muito bem as consequências dos seus atos. Mate terroristas demais e estragará seu disfarce. Hesite e milhões morrerão. Faça o que for preciso para completar a missão, mas procure sobreviver.</h4>
+                    <br>
+                    <label style="color:rgb(199, 101, 36)">R$ 36,00</label>
+                    <button type="button" id="btncomprar2" name="btncomprar2" class="btn" onclick="inserindoCompra(8)">Comprar <!--icon---><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    </button>
+                    <button type="button" id="btnlojas2" name="btnlojas2" class="btn" data-toggle="modal" data-target="#modalLojas" onclick="chamaloja(8)">Lojas <!--icon---><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row" id="mostra_Overwatch" style="display:none">
+                <div class="col-md-6">
+                  <img src="https://upload.wikimedia.org/wikipedia/pt/b/bf/Overwatch_logo.jpg"  style=" height: auto;"> 
+                </div>
+                <div class="col-md-5">
+                    <label>Overwatch </label>
+                    <br>
+                    <hr>
+                    <label style="color:rgb(199, 101, 36)"><u>Descrição</u></label>
+                    <hr>
+                    <h4>Overwatch é um jogo de tiro em equipe que conta com um elenco diversificado de heróis poderosíssimos. Viaje pelo mundo, monte uma equipe e dispute objetivos em combates 6v6 de tirar o fôlego.</h4>
+                    <br>
+                    <label style="color:rgb(199, 101, 36)">R$ 116,90</label>
+                    
+                    <button type="button" id="btncomprar2" name="btncomprar2" class="btn"  onclick="inserindoCompra(1)">Comprar <!--icon---><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    </button>
+                    <button type="button" id="btnlojas2" name="btnlojas2" class="btn"  data-toggle="modal" data-target="#modalLojas" onclick="chamaloja(1)">Lojas <!--icon---><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row" id="mostra_Spider" style="display:none">
+                <div class="col-md-6">
+                  <img src="https://upload.wikimedia.org/wikipedia/pt/7/78/Spider-Man_jogo_2018_capa.png"  style=" height: auto;"> 
+                </div>
+                <div class="col-md-5">
+                    <label>Spider-Man  </label>
+                    <br>
+                    <hr>
+                    <label style="color:rgb(199, 101, 36)"><u>Descrição</u></label>
+                    <h4>Spider-Man é um jogo eletrônico de ação-aventura desenvolvido pela Insomniac Games e publicado pela Sony Interactive Entertainment. É baseado nos personagens, mitologia e adaptações em outras mídias do super-herói de histórias em quadrinhos Homem-Aranha da Marvel Comics, tendo sido lançado exclusivamente para PlayStation 4 em 7 de setembro de 2018. Na história, o criminoso super-humano Senhor Negativo organiza um plano para se vingar do prefeito Norman Osborn e assumir o controle do submundo criminal de Nova Iorque. O Homem-Aranha precisa proteger a cidade assim que o Senhor Negativo ameaça lançar um vírus mortal por toda a área, ao mesmo tempo que é forçado a lidar com seus problemas pessoais como Peter Parker.</h4>
+                   <br>
+                    <label style="color:rgb(199, 101, 36)">R$ 116,90</label>
+                    <br>
+                    <button type="button" id="btncomprar2" name="btncomprar2" class="btn"  onclick="inserindoCompra(2)">Comprar <!--icon---><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    </button>
+                    <button type="button" id="btnlojas2" name="btnlojas2" class="btn"  data-toggle="modal" data-target="#modalLojas"  onclick="chamaloja(2)" >Lojas <!--icon---><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row" id="mostra_Watch" style="display:none">
+                <div class="col-md-6">
+                  <img src="https://s3.amazonaws.com/comparegame/thumbnails/42209/large.jpg"  style=" height: auto;"> 
+                </div>
+                <div class="col-md-5">
+                    <label>Watch Dogs 2</label>
+                    <br>
+                    <hr>
+                    <label style="color:rgb(199, 101, 36)"><u>Descrição</u></label>
+                    <h4>Junte-se ao Dedsec, um grupo notório de hackers, para executar o maior hack da história; Derrube o ctOS 2.0, um sistema operacional invasivo que está sendo usado por um gênio do crime para monitorar e manipular os cidadãos em uma escala massiva.</h4>
+                   <br>
+                    <label style="color:rgb(199, 101, 36)">R$ 60,00</label>
+                    <br>
+                    <button type="button" id="btncomprar2" name="btncomprar2" class="btn"  onclick="inserindoCompra(6)">Comprar <!--icon---><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    </button>
+                    <button type="button" id="btnlojas2" name="btnlojas2" class="btn"  data-toggle="modal" data-target="#modalLojas" onclick="chamaloja(6)">Lojas <!--icon---><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row" id="mostra_God3" style="display:none">
+                <div class="col-md-6">
+                  <img src="https://s3.amazonaws.com/comparegame/thumbnails/41421/large.jpg"  width="460" style="height: auto;"> 
+                </div>
+                <div class="col-md-5">
+                    <label>God of War III</label> 
+                    <br>
+                    <hr>
+                    <label style="color:rgb(199, 101, 36)"><u>Descrição</u></label>
+                    <h4>Kratos está devolta, ainda com a vingança pulsando forte em suas veias. O Olimpo e seus deuses é o seu alvo, não importa o preço que o Deus da Guerra irá pagar. Neste terceiro e épico capítulo você irá controlar Kratos através de batalhas celestiais contra os deuses mais poderosos de todo o Olimpo – inclusive voltará ao inferno e acertar as contas com seu pai colossal e poderoso, Kronos. Deuses como Hermes e Hades não serão páreo para seu poder, os olhos ardentes daquele que busca vingança que nem a mais cruel das mortes pode deter. Enfrente desafios arrasadores e enfrente monstros poderosos como a Quimera, o Cérberus e muitos outros seres místicos que estão ali apenas para acabar com sua existência. Não pare por nada até enfrentar o deus dos deuses: Zeus, e acabar com isso de uma vez por todas.</h4>
+                   <br>
+                    <label style="color:rgb(199, 101, 36)">R$ 50,00</label>
+                    <br>
+                    <button type="button" id="btncomprar2" name="btncomprar2" class="btn"  onclick="inserindoCompra(5)">Comprar <!--icon---><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    </button>
+                    <button type="button" id="btnlojas2" name="btnlojas2" class="btn"  data-toggle="modal" data-target="#modalLojas" onclick="chamaloja(5)">Lojas <!--icon---><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row" id="mostra_Batman" style="display:none">
+                <div class="col-md-6">
+                  <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/f/f0/Batman_arkham_city_logo.jpg/200px-Batman_arkham_city_logo.jpg " width="300" style="height: auto;"> 
+                </div>
+                <div class="col-md-5">
+                    <label>Batman arkham city</label>
+                    <br>
+                    <hr>
+                    <label style="color:rgb(199, 101, 36)"><u>Descrição</u></label>
+                    <h4>Batman: Arkham City é um jogo eletrônico de Ação-Aventura e Stealth, baseado na série de quadrinhos Batman da DC Comics. O jogo é distribuído para: PlayStation 3, Xbox 360 e Microsoft Windows. Foi desenvolvido pela Rocksteady Studios e foi publicado pela Warner Bros. Interactive Entertainment e DC Entertainment.</h4>
+                   <br>
+                    <label style="color:rgb(199, 101, 36)">R$ 31,00</label>
+                    <br>
+                    <button type="button" id="btncomprar2" name="btncomprar2" class="btn"  onclick="inserindoCompra(7)">Comprar <!--icon---><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    </button>
+                    <button type="button" id="btnlojas2" name="btnlojas2" class="btn"  data-toggle="modal" data-target="#modalLojas" onclick="chamaloja(7)">Lojas <!--icon---><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row" id="mostra_Ghost" style="display:none">
+                <div class="col-md-6">
+                  <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/d/dc/Ghost_of_Tsushima_capa.png/270px-Ghost_of_Tsushima_capa.png" width="400" style="height: auto;"> 
+                </div>
+                <div class="col-md-5">
+                    <label>Ghost of Tsushima</label>
+                    <br>
+                    <hr>
+                    <label style="color:rgb(199, 101, 36)"><u>Descrição</u></label>
+                    <h4>No final do século XIII, o império mongol devastou nações inteiras durante sua campanha para conquistar o Oriente. A Ilha de Tsushima é tudo o que está entre o Japão continental e uma enorme frota invasora mongol comandada pelo implacável e sagaz general Khotun Khan. À medida que a ilha queima na esteira da primeira onda do assalto mongol, o guerreiro samurai Jin Sakai mantém-se como um dos último membros sobreviventes de seu clã. Ele está decidido a proteger seu povo e recuperar seu lar, independente do que aconteça, custe o que custar. Será preciso romper com as tradições que o tornaram um guerreiro para forjar um novo caminho do Fantasma e declarar uma guerra incomum pela liberdade de Tsushima.</h4>
+                   <br>
+                    <label style="color:rgb(199, 101, 36)">R$ 249,00</label>
+                    <br>
+                    <button type="button" id="btncomprar2" name="btncomprar2" class="btn"  onclick="inserindoCompra(4)">Comprar <!--icon---><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    </button>
+                    <button type="button" id="btnlojas2" name="btnlojas2" class="btn"  data-toggle="modal" data-target="#modalLojas" onclick="chamaloja(4)">Lojas <!--icon---><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row" id="mostra_God" style="display:none">
+                <div class="col-md-6">
+                  <img src="https://upload.wikimedia.org/wikipedia/pt/8/82/God_of_War_2018_capa.png"  style="height: auto;"> 
+                </div>
+                <div class="col-md-5">
+                    <label>God Of War</label>
+                    <br>
+                    <hr>
+                    <label style="color:rgb(199, 101, 36)"><u>Descrição</u></label>
+                    <h4>É um novo começo para Kratos. Vivendo como um homem longe da sombra dos deuses, ele se aventura pelas selvagens florestas nórdicas com seu filho Atreus, lutando para cumprir uma missão profundamente pessoal. O Santa Monica Studio e o diretor de criação Cory Barlog lançam um novo começo para um dos personagens mais conhecidos dos jogos. Vivendo como um homem, fora da sombra dos deuses, Kratos deve se adaptar a terras desconhecidas, ameaças inesperadas e a uma segunda oportunidade de ser pai. Junto ao seu filho, Atreus, os dois vão se aventurar pelas selvagens florestas nórdicas e lutar para cumprir uma missão profundamente pessoal.</h4>
+                   <br>
+                    <label style="color:rgb(199, 101, 36)">R$ 249,00</label>
+                    <br>
+                    <button type="button" id="btncomprar2" name="btncomprar2" class="btn" onclick="inserindoCompra(3)">Comprar <!--icon---><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    </button>
+                    <button type="button" id="btnlojas2" name="btnlojas2" class="btn"  data-toggle="modal" data-target="#modalLojas" onclick="chamaloja(3)">Lojas <!--icon---><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    </button>
+                </div>
+            </div>
+
+
+
+            <div class="panel panel-default" style="background-color: rgb(199, 101, 36);color:aliceblue;margin-top: 2%;">
+                <div class="panel-body" >Produtos Relacionados</div>
+            </div>
+            <div class="row" align="center">
+                <div class="col-sm-3" id="jogo_Overwatch">
+                  <div class="form-group">
+                      <a href="descricao.html?Overwatch">
+                          <img src="https://upload.wikimedia.org/wikipedia/pt/b/bf/Overwatch_logo.jpg"  style="max-width: 200px; height: auto;">
+                      </a>
+                          <br>
+                          <br>
+                      <a href="descricao.html?Overwatch">
+                          Overwatch
+                      </a>
+                          <br>
+                      <label style="color:black;font-size: 20px;">
+                          R$ 160,00
+                      </label>
+                          <br>
+                      <a href="descricao.html?Overwatch">
+                          <button class="btn btnn" type="button">COMPRAR</button>
+                      </a>
+                  </div>
+              </div>
+                
+              <div class="col-sm-3" id="jogo_Spider">
+                <div class="form-group">
+                    <a href="descricao.html?Spider">
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/7/78/Spider-Man_jogo_2018_capa.png"  style="max-width: 245px; height: auto;">
+                    </a>
+                        <br>
+                        <br>
+                    <a href="descricao.html?Spider">
+                        Spider-Man
+                    </a>
+                        <br>
+                    <label style="color:black;font-size: 20px;">
+                        R$ 116,90
+                    </label>
+                        <br>
+                    <a href="descricao.html?Spider">
+                         <button class="btn btnn" type="button">COMPRAR</button>
+                    </a>
+               </div>
+             </div>
+                
+             <div class="col-sm-3" id="jogo_God" >
+                <div class="form-group">
+                    <a href="descricao.html?God">
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/8/82/God_of_War_2018_capa.png"  style="max-width: 280px; height: auto;">
+                    </a>
+                        <br>
+                        <br>
+                    <a href="descricao.html?God">
+                        God Of War
+                    </a>
+                        <br>
+                    <label style="color:black;font-size: 20px;">
+                        R$ 69,90
+                    </label>
+                        <br>
+                    <a href="descricao.html?God">
+                        <button class="btn btnn" type="button">COMPRAR</button>
+                    </a>
+                 </div>
+             </div> 
+            <div class="col-sm-3" id="jogo_God_3" >
+               <div class="form-group">
+                  <a href="descricao.html?God3">    
+                      <img src="https://s3.amazonaws.com/comparegame/thumbnails/41421/large.jpg"  style="max-width: 245px; height: auto;">
+                  </a>  
+                      <br>
+                      <br>
+                  <a href="descricao.html?God3">
+                      God of War III
+                  </a>
+                      <br>
+                  <label style="color:black;font-size: 20px;">
+                      R$ 50,00
+                  </label>
+                      <br>
+                  <a href="descricao.html?God3">
+                        <button class="btn btnn" type="button">COMPRAR</button>
+                  </a>
+                </div>
+            </div>
+          </div>
+     </div>
+
+     
+     <div id="modalLojas" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Lojas com disponibilidades</h4>
+            </div>
+            <div class="modal-body">
+              <div id="resultado"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+     
+    <script>
+         let prmstr = window.location.search.substr(1);
+        if(prmstr == 'God'){
+            document.getElementById("mostra_God").style.display = "block";      
+        } 
+        if(prmstr == 'Ghost'){
+            document.getElementById("mostra_Ghost").style.display = "block";      
+        } 
+        if(prmstr == 'Batman'){
+            document.getElementById("mostra_Batman").style.display = "block";      
+        } 
+        if(prmstr == 'God3'){
+            document.getElementById("mostra_God3").style.display = "block";      
+        } 
+        if(prmstr == 'Watch'){
+            document.getElementById("mostra_Watch").style.display = "block";      
+        } 
+        if(prmstr == 'Spider'){
+            document.getElementById("mostra_Spider").style.display = "block";      
+        } 
+        if(prmstr == 'Overwatch'){
+            document.getElementById("mostra_Overwatch").style.display = "block";      
+        } 
+        if(prmstr == 'Tom'){
+            document.getElementById("mostra_Tom").style.display = "block";      
+        } 
+    </script>
+
+
+
+   <script>
+        chamaloja = (id_jogo) =>{
+            alert(id_jogo)
+            $.ajax({
+                type: 'get',
+                url: `http://127.0.0.1:3333/lojas/${id_jogo}`,
+                data: {}, 
+                success: function(result){
+                    text = '';
+                    for (i = 0; i < result.length; i++) {
+                        text += `<a onclick="chamaMAPA('${result[i].nome_loja}')">${result[i].nome_loja}</a><br>`
+                    }
+                    $("#resultado").html(text);
+                },
+                error: function(){
+                    alert('Erro no ajax')
+                }});
+        }
+    </script>
+    <Script>
+        inserindoCompra = (id_jogo) =>{
+            let inserindoNome = window.location.search.substr(1);
+            $.ajax({
+                type: 'post',
+                url: `http://127.0.0.1:3333/comprar`,
+                data: {
+                    "nome" : inserindoNome,
+                    "email": "teste@teste.com",
+                    "idJogo": id_jogo,
+                    "cod" : "0XFF2ASD"
+                }, 
+                success: function(result){
+                    alert('Compra realizada com sucesso.')
+                   
+                },
+                error: function(){
+                    alert('Erro no ajax')
+                }});
+        }
+    </Script>
+    
+    <script>
+         chamaMAPA = (nomeloja) =>{
+            window.open('api_google.html?'+ encodeURIComponent(nomeloja));
+         }
+    </script>
+</body>
+</html>

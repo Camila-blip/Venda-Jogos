@@ -1,0 +1,321 @@
+<!-- no fim da página tem um script que mostra os jogos de acordo com o que foi selecionado, fiz com base em display none e block para não criar diversas páginas-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Bootstrap--> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .btn:hover{
+                background-color: #fff;  
+        }
+        .btn{
+            background-color: gray;
+            color: #fff
+        }
+        .borda{
+            border-style: solid;
+        }
+        .btnn:hover{
+                background-color: black;  
+        }
+       
+    </style>
+</head>
+<body>
+    <!--inicio cabecalho-->
+    <div class="container-fluid" style="background-color: black;">
+        <div class="container">
+             <div class="row">
+                <div class="col-sm-2">
+                    <a href="index.html"> 
+                        <img src="logo2.jfif" width="100">
+                    </a>
+                </div>
+                <div class="col-sm-3" style="margin-top: 3%;">
+                    <input class="form-control" id="pesquisa" name="pesquisa" placeholder="Digite o que você procura">
+                </div>
+                <div class="col-sm-1" style="margin-top: 3%;">
+                    <button type="button" id="btnbuscar" name="btnbuscar" class="btn form-control" >Buscar</button>
+                </div>
+                <div class="col-sm-4">
+                </div>
+                <div class="col-sm-2" style="margin-top: 3%;">
+                    <button type="button" id="btncarrinho" name="btncarrinho" class="btn form-control">Carrinho <!--icon---><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                </div>
+            </div>
+           
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                <div class="navbar-header">
+                </div>
+                <ul class="nav navbar-nav" >
+                 
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">PLAYSTATION <span class="caret"></span></a>
+                       
+                        <ul class="dropdown-menu">
+                            <li><a href="tiposdejogos.html?PS2">PS2</a></li>
+                            <li><a href="tiposdejogos.html?PS3">PS3</a></li>
+                            <li><a href="tiposdejogos.html?PS4">PS4</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">XBOX <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="tiposdejogos.html?360">Xbox 360</a></li>
+                            <li><a href="tiposdejogos.html?XBoxOne">XBoxOne</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">NINTENDO <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="tiposdejogos.html?Switch">Nintendo Switch</a></li>
+                            <li><a href="tiposdejogos.html?WiiU">Nintendo WiiU</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tiposdejogos.html?PC">PC</a></li>
+                    <li><a href="#">#PROMOÇÃO QRCODE</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">COMO FUNCIONA<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">COMO COMPRAR</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">NOSSAS LOJAS</a></li>
+                    <li><a href="#">FALE CONOSCO</a></li>
+                </ul>
+                </div>
+            </nav>
+         </div>
+    </div>
+        
+    <!--fim cabecalho-->
+
+  
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h2><u>#FICAEMCASA E JOGA!</u></h2> 
+                    <br>
+                </div>
+            </div>
+            
+          <div class="row" align="center">
+            <div class="col-sm-3" id="jogo_Tom"  style="display: none;">
+                <div class="form-group">
+                    <a href="descricao.html?Tom"> 
+                        <img src="https://store.ubi.com/dw/image/v2/ABBS_PRD/on/demandware.static/-/Sites-masterCatalog/default/dwb3dccb35/images/large/56c4948a88a7e300458b482c.jpg?sw=341&sh=450&sm=fit"  style="max-width: 215px; height: auto;">
+                    </a>
+                        <br>
+                        <br>
+                    <a href="descricao.html?Tom">
+                        Tom Clancy's Splinter Cell: <br>Double Agent
+                    </a>
+                        <br>
+                    <label style="color:black;font-size: 20px;">
+                        R$ 36,00
+                    </label>
+                         <br>
+                    <a href="descricao.html?Tom">
+                        <button class="btn btnn" type="button">COMPRAR</button>
+                     </a>
+                </div>
+            </div>
+            
+            <div class="col-sm-3" id="jogo_Overwatch" style="display: none;">
+                <div class="form-group">
+                    <a href="descricao.html?Overwatch">
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/b/bf/Overwatch_logo.jpg"  style="max-width: 200px; height: auto;">
+                    </a>
+                        <br>
+                        <br>
+                    <a href="descricao.html?Overwatch">
+                        Overwatch
+                    </a>
+                        <br>
+                    <label style="color:black;font-size: 20px;">
+                        R$ 160,00
+                    </label>
+                        <br>
+                    <a href="descricao.html?Overwatch">
+                        <button class="btn btnn" type="button">COMPRAR</button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-sm-3" id="jogo_Spider" style="display: none;">
+                <div class="form-group">
+                    <a href="descricao.html?Spider">
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/7/78/Spider-Man_jogo_2018_capa.png"  style="max-width: 245px; height: auto;">
+                    </a>
+                        <br>
+                        <br>
+                    <a href="descricao.html?Spider">
+                        Spider-Man
+                    </a>
+                        <br>
+                    <label style="color:black;font-size: 20px;">
+                        R$ 116,90
+                    </label>
+                        <br>
+                    <a href="descricao.html?Spider">
+                         <button class="btn btnn" type="button">COMPRAR</button>
+                    </a>
+               </div>
+             </div>
+
+             <div class="col-sm-3" id="jogo_Watch"  style="display: none;">
+                <div class="form-group">
+                    <a href="descricao.html?Watch">
+                        <img src="https://s3.amazonaws.com/comparegame/thumbnails/42209/large.jpg"  style="max-width: 245px; height: auto;">
+                    </a>  
+                        <br>
+                        <br>
+                    <a href="descricao.html?Watch">
+                      Watch Dogs 2
+                    </a>
+                    <br>
+                  <label style="color:black;font-size: 20px;">
+                      R$ 60,00
+                  </label>
+                     <br>
+                  <a href="descricao.html?Watch">
+                    <button class="btn btnn" type="button">COMPRAR</button>
+                  </a>
+                </div>
+            </div>
+            
+
+             <div class="col-sm-3" id="jogo_God_3" style="display: none;">
+                <div class="form-group">
+                    <a href="descricao.html?God3">    
+                        <img src="https://s3.amazonaws.com/comparegame/thumbnails/41421/large.jpg"  style="max-width: 245px; height: auto;">
+                    </a>  
+                        <br>
+                        <br>
+                    <a href="descricao.html?God3">
+                        God of War III
+                    </a>
+                        <br>
+                    <label style="color:black;font-size: 20px;">
+                        R$ 50,00
+                    </label>
+                        <br>
+                    <a href="descricao.html?God3">
+                         <button class="btn btnn" type="button">COMPRAR</button>
+                    </a>
+                 </div>
+             </div>
+
+             <div class="col-sm-3" id="jogo_batman" style="display: none;">
+                <div class="form-group">
+                    <a href="descricao.html?Batman">
+                         <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/f/f0/Batman_arkham_city_logo.jpg/200px-Batman_arkham_city_logo.jpg " width="230"  style="max-width: 300px; height: auto;">
+                    </a>
+                        <br>
+                        <br>
+                    <a href="descricao.html?Batman">Batman arkham city</a>
+                        <br>
+                    <label style="color:black;font-size: 20px;">
+                        R$ 31,00
+                    </label>
+                        <br>
+                    <a href="descricao.html?Batman">
+                         <button class="btn btnn" type="button">COMPRAR</button>
+                    </a>
+                </div>
+             </div>
+            </div> 
+
+            <div class="row" align="center">
+                <div class="col-sm-3" id="jogo_Ghost"  style="display: none;">
+                    <div class="form-group">
+                      <a href="descricao.html?Ghost">
+                         <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/d/dc/Ghost_of_Tsushima_capa.png/270px-Ghost_of_Tsushima_capa.png"  style="max-width: 225px; height: auto;">
+                      </a>
+                        <br>
+                        <br>
+                      <a href="descricao.html?Ghost">
+                          Ghost of Tsushima
+                      </a>
+                        <br>
+                      <label style="color:black;font-size: 20px;">
+                            R$ 249,00
+                      </label>
+                        <br>
+                     <a href="descricao.html?Ghost">
+                        <button class="btn btnn" type="button">COMPRAR</button>
+                     </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-3" id="jogo_God" style="display: none;">
+                    <div class="form-group">
+                        <a href="descricao.html?God">
+                             <img src="https://upload.wikimedia.org/wikipedia/pt/8/82/God_of_War_2018_capa.png"  style="max-width: 280px; height: auto;">
+                        </a>
+                            <br>
+                            <br>
+                        <a href="descricao.html?God">
+                            God Of War
+                        </a>
+                            <br>
+                        <label style="color:black;font-size: 20px;">
+                            R$ 69,90
+                        </label>
+                             <br>
+                        <a href="descricao.html?God">
+                            <button class="btn btnn" type="button">COMPRAR</button>
+                        </a>
+                      </div>
+                 </div> 
+            </div>
+                
+        </div>
+        <script>
+            let prmstr = window.location.search.substr(1);
+        
+            if(prmstr == 'PS2'){
+               document.getElementById("jogo_Tom").style.display = "block";      
+            }
+            if(prmstr == 'PS3'){
+               document.getElementById("jogo_Tom").style.display = "block";
+               document.getElementById("jogo_God_3").style.display = "block";        
+            }
+            if(prmstr == 'PS4'){
+               document.getElementById("jogo_Overwatch").style.display = "block";
+               document.getElementById("jogo_Spider").style.display = "block";
+               document.getElementById("jogo_God").style.display = "block";
+               document.getElementById("jogo_God_3").style.display = "block";        
+               document.getElementById("jogo_Ghost").style.display = "block"; 
+               document.getElementById("jogo_Watch").style.display = "block"; 
+            }
+            if(prmstr == '360'){
+               document.getElementById("jogo_Tom").style.display = "block";
+               document.getElementById("jogo_batman").style.display = "block";        
+            }
+            if(prmstr == 'XBoxOne'){
+               document.getElementById("jogo_Watch").style.display = "block";
+               document.getElementById("jogo_Overwatch").style.display = "block";        
+            }
+            if(prmstr == 'Switch'){
+               document.getElementById("jogo_Overwatch").style.display = "block";        
+            }
+            if(prmstr == 'WiiU'){
+               document.getElementById("jogo_batman").style.display = "block";        
+            }
+            if(prmstr == 'PC'){
+               document.getElementById("jogo_Overwatch").style.display = "block";      
+               document.getElementById("jogo_Tom").style.display = "block";
+               document.getElementById("jogo_Watch").style.display = "block"; 
+               document.getElementById("jogo_batman").style.display = "block";  
+            }
+        </script>
+    <footer>
+        
+    </footer>
+</body>
+</html>
